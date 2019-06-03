@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.selflearning.MainActivity">
+
+    <item
+        android:id="@+id/trans_with_serializable"
+        android:orderInCategory="100"
+        android:title="@string/trans_with_serializable"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/trans_with_parcelable"
+        android:orderInCategory="100"
+        android:title="@string/trans_with_parcelable"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/activity_return"
+        android:orderInCategory="100"
+        android:title="@string/activity_return"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/call_multi_activities"
+        android:orderInCategory="100"
+        android:title="@string/call_multi_activities"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/application_share_data"
+        android:orderInCategory="100"
+        android:title="@string/application_share_data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/service_demo"
+        android:orderInCategory="100"
+        android:title="@string/service_demo"
+        app:showAsAction="never" />
+</menu>
