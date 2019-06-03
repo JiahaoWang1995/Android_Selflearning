@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServiceDemoActivity"
+    tools:context=".BroadcastReceiverDemo"
     android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/data_to_service"
-        android:hint="@string/data_to_service"
-        android:text="@string/data_to_service_default"/>
+        android:id="@+id/btn_send_msg"
+        android:text="@string/btn_send_msg"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_start_service"
-        android:id="@+id/btn_start_service"/>
+        android:id="@+id/btn_register_broadcast_receiver"
+        android:text="@string/btn_register_broadcast_receiver"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_stop_service"
-        android:id="@+id/btn_stop_service"/>
+        android:id="@+id/btn_remove_broadcast_receiver"
+        android:text="@string/btn_remove_broadcast_receiver"/>
 
 </LinearLayout>

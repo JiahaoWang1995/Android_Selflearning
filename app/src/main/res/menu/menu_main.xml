@@ -38,4 +38,22 @@
         android:orderInCategory="100"
         android:title="@string/service_demo"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/bind_service_demo"
+        android:orderInCategory="100"
+        android:title="@string/bind_service_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/aidl_service"
+        android:orderInCategory="100"
+        android:title="@string/aidl_service"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/broadcast_receiver_demo"
+        android:orderInCategory="100"
+        android:title="@string/broadcast_receiver_demo"
+        app:showAsAction="never" />
 </menu>

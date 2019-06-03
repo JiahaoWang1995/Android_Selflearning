@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServiceDemoActivity"
+    tools:context=".BindService"
     android:orientation="vertical">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/data_to_service"
+        android:id="@+id/bind_data_to_service"
         android:hint="@string/data_to_service"
-        android:text="@string/data_to_service_default"/>
+        android:text="@string/bind_data_to_service_default"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -25,5 +25,23 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_stop_service"
         android:id="@+id/btn_stop_service"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sync_service"
+        android:id="@+id/btn_sync_service"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/binded_service_flag"
+        android:text="@string/bind_service_flag"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/binded_service_loop_count"
+        android:text="@string/binded_service_loop_count"/>
 
 </LinearLayout>

@@ -12,4 +12,18 @@
     <string name="service_demo">Service demo</string>
     <string name="btn_start_service">Start Service</string>
     <string name="btn_stop_service">Stop Service</string>
+    <string name="bind_service_flag">Service disconnected</string>
+    <string name="bind_service_demo">Bind service</string>
+    <string name="data_to_service">What you want to toast?</string>
+    <string name="data_to_service_default">Default data</string>
+    <string name="bind_data_to_service_default">Default data</string>
+    <string name="btn_sync_service">Sync data</string>
+    <string name="binded_service_loop_count">Service unavaliable</string>
+    <string name="aidl_service">AIDL Demo</string>
+    <string name="btn_bind_service">Bind service</string>
+    <string name="btn_unbind_service">Unbind service</string>
+    <string name="broadcast_receiver_demo">Broadcase Receiver Demo</string>
+    <string name="btn_send_msg">Send message</string>
+    <string name="btn_register_broadcast_receiver">Regist Broadcast Receiver</string>
+    <string name="btn_remove_broadcast_receiver">Remove Broadcast Receiver</string>
 </resources>

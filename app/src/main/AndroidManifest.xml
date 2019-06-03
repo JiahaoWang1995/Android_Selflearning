@@ -10,10 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".BroadcastReceiverDemo" />
+        <activity android:name=".CallOtherAppService" />
+        <activity android:name=".BindService" />
+
         <service
             android:name=".MyDemoService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
         <activity android:name=".ServiceDemoActivity" />
         <activity android:name=".ShareDataDemoB" />

@@ -74,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.service_demo) {
             Intent intent = new Intent(MainActivity.this, ServiceDemoActivity.class);
             startActivity(intent);
+        } else if (id == R.id.bind_service_demo) {
+            Intent intent = new Intent(MainActivity.this, BindService.class);
+            startActivity(intent);
+        } else if(id == R.id.aidl_service) {
+            Intent intent = new Intent(MainActivity.this, CallOtherAppService.class);
+            startActivity(intent);
+        } else if (id == R.id.broadcast_receiver_demo) {
+            Intent intent = new Intent(MainActivity.this, BroadcastReceiverDemo.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

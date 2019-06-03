@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServiceDemoActivity"
+    tools:context=".CallOtherAppService"
     android:orientation="vertical">
 
     <EditText
@@ -25,5 +25,23 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_stop_service"
         android:id="@+id/btn_stop_service"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_bind_service"
+        android:id="@+id/btn_bind_service"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_unbind_service"
+        android:id="@+id/btn_unbind_service"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sync_service"
+        android:id="@+id/btn_sync_service"/>
 
 </LinearLayout>
