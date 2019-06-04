@@ -15,6 +15,8 @@ public class ActivityReturnDemo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_return_demo);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         et = findViewById(R.id.text);
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override

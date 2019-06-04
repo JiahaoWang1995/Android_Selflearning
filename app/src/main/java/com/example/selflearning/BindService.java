@@ -28,6 +28,8 @@ public class BindService extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bind_service);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         startBtn = findViewById(R.id.btn_start_service);
         stopBtn = findViewById(R.id.btn_stop_service);
         syncBtn = findViewById(R.id.btn_sync_service);

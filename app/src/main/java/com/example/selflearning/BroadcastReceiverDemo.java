@@ -17,6 +17,8 @@ public class BroadcastReceiverDemo extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_broadcast_receiver_demo);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         sendBtn = findViewById(R.id.btn_send_msg);
         regBCRBtn = findViewById(R.id.btn_register_broadcast_receiver);
         remBCRBtn = findViewById(R.id.btn_remove_broadcast_receiver);

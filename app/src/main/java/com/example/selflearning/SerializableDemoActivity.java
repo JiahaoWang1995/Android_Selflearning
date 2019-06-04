@@ -13,6 +13,8 @@ public class SerializableDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_serializable_demo);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         tv = findViewById(R.id.text);
         Intent intent = getIntent();
         PeopleSerializable data = (PeopleSerializable) intent.getSerializableExtra("Serializable");

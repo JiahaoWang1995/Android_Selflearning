@@ -13,6 +13,8 @@ public class ParcelableDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parcelable_demo);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         tv = findViewById(R.id.text);
         Intent intent = getIntent();
         PeopleParcelable data = intent.getParcelableExtra("Parcelable");

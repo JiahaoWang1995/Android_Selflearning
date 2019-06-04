@@ -56,4 +56,28 @@
         android:orderInCategory="100"
         android:title="@string/broadcast_receiver_demo"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/tabbed_demo"
+        android:orderInCategory="100"
+        android:title="@string/tabbed_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/framelayout_demo"
+        android:orderInCategory="100"
+        android:title="@string/framelayout_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/layout_from_code"
+        android:orderInCategory="100"
+        android:title="@string/layout_from_code"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/component_demo"
+        android:orderInCategory="100"
+        android:title="@string/component_demo"
+        app:showAsAction="never" />
 </menu>

@@ -17,6 +17,8 @@ public class ShareDataDemoA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share_data_demo);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         tv = findViewById(R.id.textView);
         tv.setText("Shared data is: "+((App)getApplicationContext()).getData());
         et = findViewById(R.id.editText);

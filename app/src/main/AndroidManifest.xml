@@ -10,7 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".ComponentDemo"></activity>
+        <activity android:name=".LayoutWithoutXML" />
+        <activity android:name=".FramelayoutActivity" />
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".BroadcastReceiverDemo" />
         <activity android:name=".CallOtherAppService" />
         <activity android:name=".BindService" />

@@ -26,4 +26,17 @@
     <string name="btn_send_msg">Send message</string>
     <string name="btn_register_broadcast_receiver">Regist Broadcast Receiver</string>
     <string name="btn_remove_broadcast_receiver">Remove Broadcast Receiver</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tabbed_demo">Tabbed Demo</string>
+    <string name="framelayout_demo">Framelayout Demo</string>
+    <string name="layout_from_code">Create Layout from Code</string>
+    <string name="component_demo">Component Demo</string>
+    <string name="date_picker">0000-00-00</string>
+    <string name="time_picker">00:00</string>
+    <string name="radio_choiceA">A</string>
+    <string name="radio_choiceB">B</string>
+    <string name="radio_choiceC">C</string>
+    <string name="submit">Submit</string>
 </resources>

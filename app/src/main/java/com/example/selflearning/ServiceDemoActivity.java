@@ -17,6 +17,8 @@ public class ServiceDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_demo);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         startBtn = findViewById(R.id.btn_start_service);
         stopBtn = findViewById(R.id.btn_stop_service);
         et = findViewById(R.id.data_to_service);

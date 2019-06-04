@@ -27,6 +27,8 @@ public class CallOtherAppService extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_call_other_app_service);
+        String title = getIntent().getStringExtra("title");
+        setTitle(title);
         startBtn = findViewById(R.id.btn_start_service);
         stopBtn = findViewById(R.id.btn_stop_service);
         startBindBtn = findViewById(R.id.btn_bind_service);

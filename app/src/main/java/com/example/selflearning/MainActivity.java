@@ -8,12 +8,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String TAG = "Self Learning TAG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,39 +51,64 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.trans_with_serializable) {
             Intent intent = new Intent(MainActivity.this, SerializableDemoActivity.class);
+            intent.putExtra("title", item.getTitle());
             intent.putExtra("Serializable", new PeopleSerializable("Frank", 24));
             startActivity(intent);
             return true;
         } else if (id == R.id.trans_with_parcelable) {
             Intent intent = new Intent(MainActivity.this, ParcelableDemoActivity.class);
+            intent.putExtra("title", item.getTitle());
             intent.putExtra("Parcelable", new PeopleParcelable("Roxanne", 24));
             startActivity(intent);
             return true;
         } else if (id == R.id.activity_return) {
             Intent intent = new Intent(MainActivity.this, ActivityReturnDemo.class);
+            intent.putExtra("title", item.getTitle());
 //            startActivity(intent);
             startActivityForResult(intent, 0);
         } else if (id == R.id.call_multi_activities) {
             try {
                 Intent intent = new Intent("com.example.selflearning.intent.action.DemoActivity");
+                intent.putExtra("title", item.getTitle());
                 startActivity(intent);
             } catch (Exception e) {
                 Toast.makeText(MainActivity.this, "Can not start this Activity", Toast.LENGTH_SHORT).show();
             }
         } else if (id == R.id.application_share_data) {
             Intent intent = new Intent(MainActivity.this, ShareDataDemoA.class);
+            intent.putExtra("title", item.getTitle());
             startActivity(intent);
         } else if (id == R.id.service_demo) {
             Intent intent = new Intent(MainActivity.this, ServiceDemoActivity.class);
+            intent.putExtra("title", item.getTitle());
             startActivity(intent);
         } else if (id == R.id.bind_service_demo) {
             Intent intent = new Intent(MainActivity.this, BindService.class);
+            intent.putExtra("title", item.getTitle());
             startActivity(intent);
         } else if(id == R.id.aidl_service) {
             Intent intent = new Intent(MainActivity.this, CallOtherAppService.class);
+            intent.putExtra("title", item.getTitle());
             startActivity(intent);
         } else if (id == R.id.broadcast_receiver_demo) {
             Intent intent = new Intent(MainActivity.this, BroadcastReceiverDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.tabbed_demo) {
+            Intent intent = new Intent(MainActivity.this, TabbedActivity.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.framelayout_demo) {
+            Intent intent = new Intent(MainActivity.this, FramelayoutActivity.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.layout_from_code) {
+            Intent intent = new Intent(MainActivity.this, LayoutWithoutXML.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.component_demo) {
+            Intent intent = new Intent(MainActivity.this, ComponentDemo.class);
+            intent.putExtra("title", item.getTitle());
             startActivity(intent);
         }
 
