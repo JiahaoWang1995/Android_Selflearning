@@ -5,12 +5,16 @@
     <application
         android:name=".App"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/oneplus"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/oneplus"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ComponentDemo"></activity>
+        <activity android:name=".ActionBarDemo"></activity>
+        <activity android:name=".ViewPagerDemo" />
+        <activity android:name=".LayoutAnimationDemo" />
+        <activity android:name=".AnimationDemo" />
+        <activity android:name=".ComponentDemo" />
         <activity android:name=".LayoutWithoutXML" />
         <activity android:name=".FramelayoutActivity" />
         <activity

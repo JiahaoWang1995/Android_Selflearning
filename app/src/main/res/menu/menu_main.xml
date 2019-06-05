@@ -80,4 +80,28 @@
         android:orderInCategory="100"
         android:title="@string/component_demo"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/animation_demo"
+        android:orderInCategory="100"
+        android:title="@string/animation_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/layout_animation_demo"
+        android:orderInCategory="100"
+        android:title="@string/layout_animation_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/view_pager_demo"
+        android:orderInCategory="100"
+        android:title="@string/view_pager_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_bar_demo"
+        android:orderInCategory="100"
+        android:title="@string/action_bar_demo"
+        app:showAsAction="never" />
 </menu>

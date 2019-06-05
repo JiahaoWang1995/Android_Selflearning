@@ -29,4 +29,20 @@
         android:layout_height="50dp"
         android:background="@drawable/button_skin"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_background_9"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_background"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_reset_viewpager_flag"
+        android:text="@string/btn_reset_viewpager_flag"/>
+
 </LinearLayout>

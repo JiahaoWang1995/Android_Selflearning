@@ -2,6 +2,7 @@ package com.example.selflearning;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -16,6 +17,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "Self Learning TAG";
+    Boolean isFirstIn = false;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+        init();
+
+        findViewById(R.id.btn_reset_viewpager_flag).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean("isFirstIn", true);
+                editor.commit();
             }
         });
     }
@@ -110,6 +123,31 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ComponentDemo.class);
             intent.putExtra("title", item.getTitle());
             startActivity(intent);
+        } else if (id == R.id.animation_demo) {
+            Intent intent = new Intent(MainActivity.this, AnimationDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.layout_animation_demo) {
+            Intent intent = new Intent(MainActivity.this, LayoutAnimationDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.view_pager_demo) {
+            isFirstIn = sharedPreferences.getBoolean("isFirstIn", true);
+            if (isFirstIn) {
+                Intent intent = new Intent(MainActivity.this, ViewPagerDemo.class);
+                intent.putExtra("title", item.getTitle());
+                startActivity(intent);
+                isFirstIn = false;
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean("isFirstIn", isFirstIn);
+                editor.commit();
+            } else {
+                Toast.makeText(this, "Not the first time in the ViewPagerDemo", Toast.LENGTH_SHORT).show();
+            }
+        } else if (id == R.id.action_bar_demo) {
+            Intent intent = new Intent(MainActivity.this, ActionBarDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -122,5 +160,10 @@ public class MainActivity extends AppCompatActivity {
             CharSequence text = "Return value detected: "+data.getStringExtra("data");
             Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void init() {
+        sharedPreferences = getSharedPreferences("Database", MODE_PRIVATE);
+        isFirstIn = sharedPreferences.getBoolean("isFirstIn", true);
     }
 }

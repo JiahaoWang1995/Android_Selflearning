@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/actionbar_search"
+        android:id="@+id/actionbar_search"
+        android:icon="@drawable/ic_actionbar_search"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="@string/actionbar_share"
+        android:id="@+id/actionbar_share"
+        android:icon="@drawable/ic_actionbar_share"
+        app:showAsAction="always"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+
+    <item android:title="@string/actionbar_setting"
+        android:id="@+id/actionbar_setting"
+        android:icon="@drawable/ic_actionbar_setting"
+        app:showAsAction="never"/>
+
+</menu>

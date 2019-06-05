@@ -39,4 +39,21 @@
     <string name="radio_choiceB">B</string>
     <string name="radio_choiceC">C</string>
     <string name="submit">Submit</string>
+    <string name="animation_demo">Animation Demo</string>
+    <string name="transparent">Transparent Me!</string>
+    <string name="rotate">Rotate Me!</string>
+    <string name="move">Move Me!</string>
+    <string name="zoom">Zoom Me!</string>
+    <string name="mix">Mixed Animation!!!</string>
+    <string name="custom_anim">Something Novel!</string>
+    <string name="layout_animation_demo">Layout Animation</string>
+    <string name="btn">Button</string>
+    <string name="btn_create">Create More</string>
+    <string name="view_pager_demo">View Pager Demo</string>
+    <string name="hello">Hello</string>
+    <string name="btn_reset_viewpager_flag">Reset Viewpager Demo</string>
+    <string name="action_bar_demo">ActionBar Demo</string>
+    <string name="actionbar_search">Search</string>
+    <string name="actionbar_setting">Setting</string>
+    <string name="actionbar_share">Share</string>
 </resources>
