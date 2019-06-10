@@ -104,4 +104,40 @@
         android:orderInCategory="100"
         android:title="@string/action_bar_demo"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/notification_demo"
+        android:orderInCategory="100"
+        android:title="@string/notification_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sharedpreference_demo"
+        android:orderInCategory="100"
+        android:title="@string/sharedpreference_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/preference_demo"
+        android:orderInCategory="100"
+        android:title="@string/preference_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sql_demo"
+        android:orderInCategory="100"
+        android:title="@string/sql_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/content_provider_demo"
+        android:orderInCategory="100"
+        android:title="@string/content_provider_demo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/json_demo"
+        android:orderInCategory="100"
+        android:title="@string/json_demo"
+        app:showAsAction="never" />
 </menu>

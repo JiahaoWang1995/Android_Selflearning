@@ -10,9 +10,11 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean("isFirstIn", true);
                 editor.commit();
+            }
+        });
+
+        findViewById(R.id.btn_image_toast).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast imageToast = Toast.makeText(MainActivity.this, "This is a toast with image", Toast.LENGTH_LONG);
+                ImageView imageView = new ImageView(MainActivity.this);
+                imageView.setImageResource(R.drawable.oneplus);
+                imageToast.setView(imageView);
+                imageToast.setGravity(Gravity.CENTER, 0, 0);
+                imageToast.show();
             }
         });
     }
@@ -148,7 +162,32 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ActionBarDemo.class);
             intent.putExtra("title", item.getTitle());
             startActivity(intent);
+        } else if (id == R.id.notification_demo) {
+            Intent intent = new Intent(MainActivity.this, NotificationDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.sharedpreference_demo) {
+            Intent intent = new Intent(MainActivity.this, SharedPreferenceDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.preference_demo) {
+            Intent intent = new Intent(MainActivity.this, PreferenceActivityDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.sql_demo) {
+            Intent intent = new Intent(MainActivity.this, SQLiteDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.content_provider_demo) {
+            Intent intent = new Intent(MainActivity.this, ContentProviderDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
+        } else if (id == R.id.json_demo) {
+            Intent intent = new Intent(MainActivity.this, JSONDemo.class);
+            intent.putExtra("title", item.getTitle());
+            startActivity(intent);
         }
+
 
         return super.onOptionsItemSelected(item);
     }

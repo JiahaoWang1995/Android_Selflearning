@@ -10,7 +10,20 @@
         android:roundIcon="@drawable/oneplus"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActionBarDemo"></activity>
+        <activity android:name=".JSONDemo"></activity>
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.example.selflearning.MyContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ContentProviderDemo" />
+        <activity android:name=".SQLiteDemo" />
+        <activity android:name=".PreferenceActivityDemo" />
+        <activity android:name=".SharedPreferenceDemo" />
+        <activity android:name=".NotificationDemo" />
+        <activity android:name=".ActionBarDemo" />
         <activity android:name=".ViewPagerDemo" />
         <activity android:name=".LayoutAnimationDemo" />
         <activity android:name=".AnimationDemo" />

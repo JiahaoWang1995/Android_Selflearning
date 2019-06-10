@@ -45,4 +45,10 @@
         android:id="@+id/btn_reset_viewpager_flag"
         android:text="@string/btn_reset_viewpager_flag"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_image_toast"
+        android:text="@string/btn_image_toast"/>
+
 </LinearLayout>

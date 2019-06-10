@@ -1,11 +1,12 @@
 package com.example.selflearning;
 
+import android.content.Intent;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ShareActionProvider;
+import android.support.v7.widget.ShareActionProvider;
 import android.widget.Toast;
 
 public class ActionBarDemo extends AppCompatActivity {
@@ -26,8 +27,16 @@ public class ActionBarDemo extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.actionbar_demo, menu);
          MenuItem shareItem = menu.findItem(R.id.actionbar_share);
-         shareActionProvider = MenuItemCompat.getActionProvider(shareItem);
+         shareActionProvider = (ShareActionProvider) MenuItemCompat.
+                 getActionProvider(shareItem);
+         shareActionProvider.setShareIntent(getDefaultIntent());
         return true;
+    }
+
+    private Intent getDefaultIntent() {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setType("text/plain");
+        return intent;
     }
 
     @Override

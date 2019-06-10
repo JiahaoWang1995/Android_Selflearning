@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries">
+
+        <item>Java</item>
+        <item>Python</item>
+        <item>Ada</item>
+
+    </string-array>
+
+    <string-array name="values">
+
+        <item>idea</item>
+        <item>Pycharm</item>
+        <item>Ada editor</item>
+
+    </string-array>
+</resources>
