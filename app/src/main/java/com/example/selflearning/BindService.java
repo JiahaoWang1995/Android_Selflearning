@@ -83,6 +83,7 @@ public class BindService extends AppCompatActivity implements View.OnClickListen
 
     }
 
+    @SuppressLint("HandlerLeak")
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
